@@ -41,7 +41,15 @@ var choices = {
 console.log(choices);
 
 
+var sum = upCase + lowCase + num + char;
+var random = "";
+for (var i=0; i<userLength; i++) {
+    var rnum = Math.floor(Math.random() * sum.length);
+    random += sum.substring(rnum, rnum+1)  
+}
 
+
+console.log(random);
 
 
 
