@@ -4,6 +4,7 @@ var userUpperCase = confirm("Would you like your password to have uppercase lett
 var userLowerCase = confirm("Would you like your password to have lowercase letters?");
 var userNumbers = confirm("Would you like your password to have numbers?");
 var userCharacters = confirm("Would you like your password to have any special characters?");
+// These prompt and confirm functions will make the user define the sum variable.
 
 
 if (userUpperCase) {
@@ -29,6 +30,7 @@ if (userCharacters) {
 } else {
   char = "";
 };
+// These if/else statements determine what chatacters will be included in the password according to how the user answers the prompts.
 
 
 var choices = {
@@ -37,8 +39,8 @@ var choices = {
   numbers: num,
   characters: char
 }
+// The variable "choices" holds the variables for each prompt the user had to answer.
 
-console.log(choices);
 
 
 var sum = upCase + lowCase + num + char;
@@ -47,10 +49,7 @@ for (var i=0; i<userLength; i++) {
     var rnum = Math.floor(Math.random() * sum.length);
     random += sum.substring(rnum, rnum+1)  
 }
-
-
-console.log(random);
-
+// This section adds the sum of the "choices" variable, creates a new variable called "random", then for loops through the characters with a math.random method to create the random password.
 
 
 
@@ -59,10 +58,10 @@ var generateBtn = document.querySelector("#generate");
 
 // Write password to the #password input
 function writePassword() {
-  var password = generatePassword();
+  
   var passwordText = document.querySelector("#password");
 
-  passwordText.value = password;
+  passwordText.value = random;
 
 }
 
