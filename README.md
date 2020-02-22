@@ -1,6 +1,6 @@
 # Random Password Generator
 
-Live Link: 
+Live Link: [https://jeffreymcfarland.github.io/password_gen/](https://jeffreymcfarland.github.io/password_gen/)
 
 ## Jeffrey McFarland
 
